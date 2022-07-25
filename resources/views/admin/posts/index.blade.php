@@ -40,10 +40,10 @@
                                     <a href="{{route('admin.posts.show', $post->id)}}" class="btn btn-primary">Visualizza</a>
                                     <a href="{{route('admin.posts.edit', $post->id)}}" class="btn btn-warning">Modifica</a>
                                     <form action="{{route('admin.posts.destroy', $post->id)}}" method="POST">
-                                    @csrf
-                                    @method('DELETE')
-                                    <button type="submit" class="btn btn-danger">Cancella</button>
-                                </form>
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="btn btn-danger">Cancella</button>
+                                    </form>
                             </td>                    
                         </tr>
                     @endforeach
